@@ -1,0 +1,74 @@
+.common-component-master {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    font-size: var(--font-size-body);
+}
+
+.main-common-block {
+    position: relative;
+    margin: var(--space-2xl) var(--space-lg);
+    width: 100%;
+    max-width: 1440px;
+    height: calc(100vh - var(--space-3xl));
+    font-family: 'Geist Mono';
+
+    section {
+        position: absolute;
+    }
+
+    .top-left, .top-right {
+        top: var(--space-lg);
+    }    
+
+    .top-right, .bot-right {
+        right: var(--space-lg);
+    }
+
+    .bot-right, .bot-left {
+        bottom: var(--space-lg);
+    }
+
+    .bot-left, .top-left {
+        left: var(--space-lg);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .common-component-master {
+        font-size: var(--font-size-body-mobile);
+    }
+
+    .main-common-block {
+        margin: var(--vertical-common-padding-mobile) var(--space-lg-mobile);
+        height: calc(100vh - var(--vertical-common-height-deficit-mobile));
+    }
+
+    
+    .main-common-block .top-left,
+    .main-common-block .top-right {
+        top: var(--space-lg-mobile);
+    }
+    
+    .main-common-block .top-right,
+    .main-common-block .bot-right {
+        right: var(--space-lg-mobile);
+    }
+    
+    .main-common-block .bot-right,
+    .main-common-block .bot-left {
+        bottom: var(--space-lg-mobile);
+    }
+    
+    .main-common-block .bot-left,
+    .main-common-block .top-left {
+        left: var(--space-lg-mobile);
+    }
+}
+@media screen and (max-width: 470px) {
+    .top-right {
+        display: none;
+    }
+}

@@ -1,0 +1,60 @@
+.leap-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--width-component);
+    font-family: 'Geist';
+}
+
+.leap-title {
+    margin: 0;
+    font-size: var(--font-size-heading);
+    font-weight: 400;
+}
+
+.leap-index {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: var(--space-lg);
+    gap: 0.875em;
+}
+
+.leap-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.leap-number,
+.leap-label {
+    font-size: var(--font-size-body);
+    font-weight: 400;
+}
+
+.leap-number {
+    font-variant-numeric: tabular-nums;
+}
+
+@media screen and (max-width: 800px) {
+    .leap-map {
+        width: var(--width-component-mobile);
+    }
+
+    .leap-title {
+        font-size: var(--font-size-heading-mobile);
+    }
+
+    .leap-index {
+        margin-top: var(--space-lg-mobile);
+    }
+
+    .leap-number,
+    .leap-label {
+        font-size: var(--font-size-body-mobile);
+    }
+}

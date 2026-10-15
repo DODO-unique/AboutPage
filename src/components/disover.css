@@ -1,0 +1,102 @@
+.main-discovery {
+  font-family: 'Geist';
+  display: flex;
+  flex-direction: column;
+
+}
+.discover-heading {
+  font-size: var(--font-size-heading);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.project-btn {
+  font-size: var(--font-size-body);
+  margin: var(--space-sm);
+  padding: 0 0.5em;
+}
+
+.project-panel {
+  position: fixed;
+  bottom: var(--space-2xl);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Geist Mono';
+}
+
+.main-project-toolkit {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: var(--width-toolkit);
+  /* background-color: var(--off-white);
+  border: 1px solid black; */
+background: rgba(195, 213, 255, 0.16);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.1px);
+-webkit-backdrop-filter: blur(7.1px);
+border: 1px solid rgba(195, 213, 255, 0.33);
+  /* background-color: #232323; */
+  /* color: white; */
+
+  h2 {
+    font-size: var(--font-size-heading);
+    padding: 0.5em 0;
+  }
+
+  p, a{
+    font-size: var(--font-size-body);
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+  
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+.thumbnail-container {
+  width: var(--width-thumbnail);
+  height: var(--height-thumbnail);
+}
+
+@media screen and (max-width: 800px) {
+  .discover-heading {
+    font-size: var(--font-size-heading-mobile);
+    padding: var(--space-md-mobile);
+    margin-bottom: var(--space-md-mobile);
+  }
+
+  .project-btn {
+    font-size: var(--font-size-body-mobile);
+    margin: var(--space-sm-mobile);
+  }
+
+  .project-panel {
+    bottom: calc(var(--vertical-common-padding-mobile) + var(--space-3xl-mobile));
+  }
+
+  .main-project-toolkit {
+    width: var(--width-toolkit-mobile);
+  }
+
+  .main-project-toolkit  {
+    h2 {
+      font-size: var(--font-size-heading-mobile);
+    }
+    p, a {
+    font-size: var(--font-size-body-mobile);
+    }
+  }
+
+  .thumbnail-container {
+    width: var(--width-thumbnail-mobile);
+    height: var(--height-thumbnail-mobile);
+  }
+}

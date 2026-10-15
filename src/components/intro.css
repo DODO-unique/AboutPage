@@ -1,0 +1,42 @@
+.main-intro {
+    width: var(--width-component);
+    font-family: 'Geist';
+    margin-bottom: var(--space-2xl);
+}
+
+.software-dev-para {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+/* style={{textAlign: 'right', fontFamily: 'Geist Mono', marginTop: '0.5rem'} */
+.jump-to-discover {
+    text-align: right;
+    font-family: 'Geist Mono';
+    margin-top: var(--space-sm);
+    cursor: pointer;    
+}
+
+.dither-container {
+    width: 143px;
+    height: 125px;
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    /* style={{ width: '143px', height: '125px', position: 'relative' }} */
+    .dither-container {
+        width: var(--width-component-mobile);
+        height: var(--dither-height-mobile);
+    }
+
+    .main-intro {
+        width: var(--width-component-mobile);
+        margin-bottom: var(--space-2xl-mobile);
+    }
+
+    .jump-to-discover {
+        margin-top: var(--space-sm-mobile);
+    }
+}
