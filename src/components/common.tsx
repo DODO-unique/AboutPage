@@ -40,7 +40,7 @@ export default function CommonComponent({currentPage}: {currentPage: number}) {
                 <p>
                     {`Portfolio / ${Number(currentPage) + 1} of 5`}
                 </p>
-                <a href="/resume.pdf" target="_blank" style={{ color: "#5C5C5C"}}>
+                <a href="/Gaurav_Mali_Resume.pdf" target="_blank" style={{ color: "#5C5C5C"}}>
                     Get Resume
                 </a>
             </section>
